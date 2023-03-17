@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_smarthome/pages/settings_page.dart';
 import '../components/room_box.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,6 +24,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  void _navigateToSettings() => {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => SettingPage()))
+      };
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +54,9 @@ class _HomePageState extends State<HomePage> {
                 ),
                 GestureDetector(
                     onTap: () => print("clicked icon"),
-                    child: const Icon(Icons.person_outline))
+                    child: GestureDetector(
+                        onTap: _navigateToSettings,
+                        child: const Icon(Icons.person_outline)))
               ],
             ),
           ),
