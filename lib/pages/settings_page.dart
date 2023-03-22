@@ -16,7 +16,7 @@ class SettingPage extends StatelessWidget {
             children: [
               GestureDetector(
                   onTap: () => Navigator.pop(context),
-                  child: Icon(Icons.arrow_back_ios_new)),
+                  child: Icon(Icons.arrow_back)),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 // ignore: prefer_const_literals_to_create_immutables

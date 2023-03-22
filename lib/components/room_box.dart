@@ -21,7 +21,7 @@ class _RoomBoxState extends State<RoomBox> {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(8.0),
-      width: 100,
+      width: 90,
       child: Column(
         children: [
           Container(
@@ -31,20 +31,20 @@ class _RoomBoxState extends State<RoomBox> {
               borderRadius: BorderRadius.circular(20),
               color: widget.isActive ? Colors.black : Colors.white,
             ),
-            height: 100.0,
+            height: 90.0,
             width: 100,
             child: Icon(
               widget.roomIcon,
               color: widget.isActive ? Colors.white : Colors.black,
-              size: 40,
+              size: 50,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(4.0),
             child: Text(
               widget.roomName,
               style: const TextStyle(
-                fontSize: 14.0,
+                fontSize: 12.0,
               ),
             ),
           ),
