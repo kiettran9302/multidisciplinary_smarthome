@@ -28,10 +28,10 @@ class _HomePageState extends State<HomePage> {
 
   List mySmartDevices = [
     // [ smartDeviceName, iconPath , powerStatus ]
-    ["Smart Light 1", Icons.lightbulb, true],
-    ["Smart Light 2", Icons.lightbulb, false],
-    ["Smart Light 3", Icons.lightbulb, false],
-    ["Smart Light 4", Icons.lightbulb, false],
+    ["Smart Light 1", Icons.light, true],
+    ["Smart Light 2", Icons.light, false],
+    ["Smart Light 3", Icons.light_mode, false],
+    ["Smart Light 4", Icons.light_sharp, false],
   ];
 
   // power button switched
@@ -156,7 +156,7 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 25),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 1 / 1.3,
+                childAspectRatio: 1 / 1.2,
               ),
               itemBuilder: (context, index) {
                 return SmartDeviceBox(
